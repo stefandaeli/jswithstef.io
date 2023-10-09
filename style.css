@@ -1,0 +1,128 @@
+body {
+    background-color: #F5F0F5;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header"
+        "sidebar content";
+    grid-template-columns: 0.5fr 2fr;
+}
+
+/*? Header*/
+
+.header {
+    background-color: #520166;
+    grid-area: header;
+    height: 50px;
+    color: #D4EB09;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    margin-bottom: 20px;
+}
+
+.header .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.navigation {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #D4EB09;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.navigation select {
+    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+    color: #D4EB09;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation select option {
+    background-color: #520166;
+}
+
+/* ? sedebar*/
+.sidebar {
+    grid-area: sidebar;
+    margin-left: 20px;
+}
+
+.sidebar .search input {
+    margin-bottom: 20px;
+    width: 140px;
+    height: 30px;
+    border: solid #520166 1px;
+    color: #520166;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar .topik {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar .topik button {
+    background-color: #520166;
+    color: #F5F0F5;
+    width: 140px;
+    height: 30px;
+    border: #F5F0F5 solid 1px;
+}
+
+/*? content*/
+
+.content {
+    grid-area: content;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #520166;
+    width: 20%;
+    border: #520166 2px solid;
+    border-top: none;
+    border-left: none;
+    font-size: 28px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.content .content-1 {
+    border: #520166 1px solid;
+    width: 65%;
+    margin-bottom: 30px;
+}
+
+.content .content-1 h2 {
+    padding-left: 10px;
+    color: #520166;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.content .content-1 p{
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.content .content-1 li{
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
